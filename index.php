@@ -17,18 +17,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST['email'] ?? '';
     $password = $_POST['password'] ?? '';
 
-    $xml = simplexml_load_file("members.xml");
-
-    foreach ($xml->member as $member) {
-        if ((string)$member->email === $email && (string)$member->password === $password) {
-            $_SESSION['logged_in'] = true;
-            $_SESSION['user_email'] = $email;
-            $_SESSION['user_name'] = (string)$member->name;
-            header("Location: home.php");  // Redirect after successful login
-            exit();
+    // Check if members.xml exists and is readable
+    if (!file_exists("members.xml") || !is_readable("members.xml")) {
+        $error = "Internal error: user database not found.";
+    } else {
+        $xml = simplexml_load_file("members.xml");
+        if ($xml === false) {
+            $error = "Internal error: failed to read user database.";
+        } else {
+            foreach ($xml->member as $member) {
+                // Plain text password comparison (not secure, see note)
+                if ((string)$member->email === $email && (string)$member->password === $password) {
+                    $_SESSION['logged_in'] = true;
+                    $_SESSION['user_email'] = $email;
+                    $_SESSION['user_name'] = (string)$member->name;
+                    header("Location: home.php");  // Redirect after successful login
+                    exit();
+                }
+            }
+            $error = "Invalid email or password";
         }
     }
-    $error = "Invalid email or password";
 }
 ?>
 <!DOCTYPE html>
