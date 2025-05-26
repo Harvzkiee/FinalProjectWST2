@@ -2,7 +2,7 @@ html, body.login-body {
     height: 100%;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f6f8;
+    background-color: #1a1a1a; /* Marvel black/gray */
     background-image: url('images/grocery-login.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -13,17 +13,17 @@ html, body.login-body {
     align-items: center;
 }
 
-/* === Login card styles (unchanged) === */
+/* === Login card styles (Marvel Theme) === */
 .login-card {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(24, 24, 36, 0.9); /* Marvel blue-black */
     padding: 50px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.6); /* Marvel Red shadow */
     width: 350px;
     text-align: center;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid #ed1d24; /* Marvel Red */
     max-height: 90vh;
     margin: auto;
     box-sizing: border-box;
@@ -37,12 +37,13 @@ html, body.login-body {
 
 .login-card h1 {
     margin: 0 0 24px 0;
-    color: white;
-    font-weight: 600;
+    color: #ed1d24; /* Marvel Red */
+    font-weight: 700;
 }
 
 .login-card label {
-    color: white;
+    color: #fff;
+    font-weight: 600;
 }
 
 .login-card input[type="text"],
@@ -58,40 +59,50 @@ html, body.login-body {
 .login-card input[type="password"] {
     padding: 12px;
     margin-bottom: 18px;
-    border: 1px solid #ccc;
+    border: 1.5px solid #223a5e; /* Marvel Blue */
+    background: #101820;
+    color: #fff;
     border-radius: 6px;
+}
+
+.login-card input[type="text"]:focus,
+.login-card input[type="email"]:focus,
+.login-card input[type="password"]:focus {
+    border-color: #ed1d24; /* Red on focus */
+    outline: none;
 }
 
 .login-card input[type="submit"] {
     padding: 12px;
-    background-color: #28a745;
-    color: white;
+    background-color: #ed1d24; /* Marvel Red */
+    color: #fff;
     border: none;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px #00000070;
 }
 
 .login-card input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #223a5e; /* Marvel Blue */
 }
 
 .login-card p {
-    color: white;
+    color: #fff;
 }
 
 .login-card p a {
-    color: white;
+    color: #ffcc00; /* Marvel Gold */
     text-decoration: underline;
 }
 
 .login-card p a:hover {
-    color: #e6ffe6;
+    color: #ed1d24;
 }
 
 .error {
-    color: red;
+    color: #ffc107; /* Marvel Gold/Yellow */
     margin-bottom: 16px;
 }
 
@@ -105,7 +116,7 @@ html, body.default-body {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #ffffff;
+    background-color: #101820;
     display: block;
 }
 
@@ -115,15 +126,15 @@ body.default-body::before {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(24, 24, 36, 0.7);
     z-index: -1;
 }
 
 /* === Hero Header Styles === */
 .hero-header {
-    background: rgba(40, 167, 69, 0.85);
-    color: white;
-    padding: 20px 20px; /* Reduced top & bottom padding */
+    background: linear-gradient(90deg, #ed1d24 60%, #223a5e 100%);
+    color: #fff;
+    padding: 20px 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -132,9 +143,10 @@ body.default-body::before {
     border-radius: 12px;
     margin: 40px auto;
     max-width: 900px;
-	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25), 
-                0 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 15px rgba(237, 29, 36, 0.25), 
+                0 4px 6px rgba(34, 58, 94, 0.15);
 }
+
 @media (max-width: 600px) {
     .hero-header h1 {
         font-size: 1.8rem;
@@ -153,40 +165,41 @@ body.default-body::before {
 h1 {
     font-weight: 700;
     margin-bottom: 20px;
-    color: white;
+    color: #ffcc00; /* Marvel Gold */
     text-align: center;
     font-size: 2rem;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 6px #101820;
 }
 
 a {
-    color: black;
+    color: #ed1d24;
     text-decoration: none;
     font-weight: 600;
 }
 
 a:hover {
-	color: #333;
+    color: #ffcc00;
     text-decoration: underline;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
+    background-color: #223a5e;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
     overflow: hidden;
+    color: #fff;
 }
 
 thead tr {
-    background-color: rgba(40, 167, 69, 0.85);
-    color: white;
+    background-color: #ed1d24;
+    color: #fff;
 }
 
 th, td {
     padding: 14px 16px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #101820;
     font-weight: 500;
 }
 
@@ -213,7 +226,7 @@ td {
 }
 
 tbody tr:hover {
-    background-color: #f1f9ff;
+    background-color: #101820;
 }
 
 /* === Logout Link Styles === */
@@ -227,21 +240,21 @@ tbody tr:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 600;
-    color: black; /* changed from #007BFF */
+    color: #ed1d24;
     text-decoration: none;
     cursor: pointer;
 }
 
 .logout-link:hover {
-    t text-decoration: underline;
-    color: #333; /* optional: darker on hover */s
+    text-decoration: underline;
+    color: #ffcc00;
 }
 
 /* === Edit and Delete Link Hover Colors === */
 a[href*="edit.php"]:hover {
-    color: #28a745; /* green */
+    color: #ffcc00;
 }
 
 a[href*="delete.php"]:hover {
-    color: #dc3545; /* red */
+    color: #ed1d24;
 }
