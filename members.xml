@@ -2,62 +2,64 @@
 <members>
   <member>
     <id>1</id>
-    <name>John Doe</name>
-    <email>john@gmail.com</email>
-    <password>1234</password>
+    <name>Tony Stark</name>
+    <email>tony.stark@avengers.com</email>
+    <password>ironman</password>
   </member>
   <member>
     <id>2</id>
-    <name>Sophia Bautista</name>
-    <email>SophiaNerry@gmail.com</email>
-    <password>Kirbylat</password>
+    <name>Steve Rogers</name>
+    <email>steve.rogers@avengers.com</email>
+    <password>captainamerica</password>
   </member>
   <member>
     <id>3</id>
-    <name>John Exekiel De Guzman</name>
-    <email>johnexekieldeguzman@gmail.com</email>
-    <password>123456789</password>
+    <name>Thor Odinson</name>
+    <email>thor@asgard.com</email>
+    <password>mjolnir</password>
   </member>
   <member>
     <id>4</id>
-    <name>Lanz Gabriel Vergara</name>
-    <email>vergaralanzgabriel@gmail.com</email>
-    <password>1234</password>
+    <name>Bruce Banner</name>
+    <email>bruce.banner@avengers.com</email>
+    <password>hulk</password>
   </member>
   <member>
     <id>5</id>
-    <name>Iris Campbell</name>
-    <email>Iris@gmail.com</email>
-    <password>1234</password>
+    <name>Natasha Romanoff</name>
+    <email>natasha.romanoff@avengers.com</email>
+    <password>blackwidow</password>
   </member>
   <member>
     <id>6</id>
-    <name>Jhiliane Avery Dela Cruz</name>
-    <email>Avery@gmail.com</email>
-    <password>1234</password>
+    <name>Clint Barton</name>
+    <email>clint.barton@avengers.com</email>
+    <password>hawkeye</password>
   </member>
   <member>
     <id>7</id>
-    <name>Kirbylat</name>
-    <email>Kirbylat@gmail.com</email>
-    <password>1234</password>
+    <name>Wanda Maximoff</name>
+    <email>wanda.maximoff@avengers.com</email>
+    <password>scarletwitch</password>
   </member>
   <member>
     <id>8</id>
-    <name>Tommy DG</name>
-    <email>MangTomas@gmail.com</email>
-    <password>1234</password>
+    <name>Vision</name>
+    <email>vision@avengers.com</email>
+    <password>mindstone</password>
   </member>
   <member>
     <id>9</id>
-    <name>Jewel DG</name>
-    <email>JewelSparkles@gmail.com</email>
-    <password>1234</password>
+    <name>Sam Wilson</name>
+    <email>sam.wilson@avengers.com</email>
+    <password>falcon</password>
   </member>
   <member>
     <id>10</id>
-    <name>Macy DG</name>
-    <email>macy@gmail.com</email>
-    <password>1234</password>
+    <name>Peter Parker</name>
+    <email>peter.parker@avengers.com</email>
+    <password>spiderman</password>
+  </member>
+</members>
   </member>
 </members>
